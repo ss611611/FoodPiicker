@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE86CF732C1C3397002FB340 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE86CF722C1C3397002FB340 /* Extension.swift */; };
+		EE86CF752C1C3C54002FB340 /* SuffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */; };
 		EE8958C22BFC77CE004D1B70 /* FoodPiickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8958C12BFC77CE004D1B70 /* FoodPiickerApp.swift */; };
 		EE8958C42BFC77CE004D1B70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8958C32BFC77CE004D1B70 /* ContentView.swift */; };
 		EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C52BFC77CE004D1B70 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE86CF722C1C3397002FB340 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
 		EE8958BE2BFC77CD004D1B70 /* FoodPiicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPiicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8958C12BFC77CE004D1B70 /* FoodPiickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPiickerApp.swift; sourceTree = "<group>"; };
 		EE8958C32BFC77CE004D1B70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,10 @@
 				EE8958C32BFC77CE004D1B70 /* ContentView.swift */,
 				EE8958C52BFC77CE004D1B70 /* Assets.xcassets */,
 				EE8958C72BFC77CE004D1B70 /* Preview Content */,
+				EEBC7D382C0319C600A91580 /* Food.swift */,
+				EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */,
+				EE86CF722C1C3397002FB340 /* Extension.swift */,
+				EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */,
 			);
 			path = FoodPiicker;
 			sourceTree = "<group>";
@@ -67,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */,
-				EEBC7D382C0319C600A91580 /* Food.swift */,
-				EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE86CF752C1C3C54002FB340 /* SuffixWrapper.swift in Sources */,
+				EE86CF732C1C3397002FB340 /* Extension.swift in Sources */,
 				EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */,
 				EE8958C42BFC77CE004D1B70 /* ContentView.swift in Sources */,
 				EE8958C22BFC77CE004D1B70 /* FoodPiickerApp.swift in Sources */,
