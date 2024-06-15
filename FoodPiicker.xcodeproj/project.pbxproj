@@ -15,6 +15,7 @@
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
 		EEBC7D392C0319C600A91580 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D382C0319C600A91580 /* Food.swift */; };
 		EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */; };
+		EEE29E912C1D1DBD0022762C /* ShapeStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEBC7D382C0319C600A91580 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
+		EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeStyleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		EE8958B52BFC77CD004D1B70 = {
 			isa = PBXGroup;
 			children = (
+				EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */,
 				EE8958C02BFC77CE004D1B70 /* FoodPiicker */,
 				EE8958BF2BFC77CD004D1B70 /* Products */,
 			);
@@ -153,6 +156,7 @@
 				EE86CF732C1C3397002FB340 /* Extension.swift in Sources */,
 				EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */,
 				EE8958C42BFC77CE004D1B70 /* ContentView.swift in Sources */,
+				EEE29E912C1D1DBD0022762C /* ShapeStyleView.swift in Sources */,
 				EE8958C22BFC77CE004D1B70 /* FoodPiickerApp.swift in Sources */,
 				EEBC7D392C0319C600A91580 /* Food.swift in Sources */,
 			);

@@ -48,7 +48,7 @@ struct ContentView: View {
             .mainButtonStyle()
             .animation(.mySpring, value: shouldShowInfo)
             .animation(.myEase, value: selectedFood)
-        }.background(Color.bg2)
+        }.background(.bg2)
     }
 }
 
