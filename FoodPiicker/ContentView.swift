@@ -16,11 +16,11 @@ struct ContentView: View {
     let food = Food.examples
     
     @ViewBuilder var selectedFoodInfoView: some View {
-        if selectedFood != .none {
+        if let selectedFood {
             
             foodNameView
             
-            Text("熱量 \(selectedFood!.$calorie)").font(.title2)
+            Text("熱量 \(selectedFood.$calorie)").font(.title2)
             
             foodDetailView
             
@@ -56,8 +56,8 @@ struct ContentView: View {
 private extension ContentView {
     var foodImage: some View {
         Grid {
-            if selectedFood != .none {
-                Text(selectedFood!.image)
+            if let selectedFood {
+                Text(selectedFood.image)
                     .font(.system(size: 200))
                     .minimumScaleFactor(0.7)
                     .lineLimit(1)

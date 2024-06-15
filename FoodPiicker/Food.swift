@@ -5,7 +5,10 @@
 //  Created by Jackie Lu on 2024/5/26.
 //
 
-struct Food: Equatable {
+import Foundation
+
+struct Food: Equatable, Identifiable {
+    let id = UUID()
     var name: String
     var image: String
     @Suffix("大卡") var calorie: Double = .zero

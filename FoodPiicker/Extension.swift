@@ -8,9 +8,9 @@
 import SwiftUI
 
 extension View {
-    func mainButtonStyle() -> some View {
+    func mainButtonStyle(shape: ButtonBorderShape = .capsule) -> some View {
         buttonStyle(BorderedProminentButtonStyle())
-            .buttonBorderShape(.capsule)
+            .buttonBorderShape(shape)
             .controlSize(.large)
     }
     
@@ -25,8 +25,9 @@ extension Animation {
 }
 
 extension ShapeStyle where Self == Color {
-    static var bg: Color {Color(.systemBackground)}
-    static var bg2: Color {Color(.secondarySystemBackground)}
+    static var bg: Color { Color(.systemBackground) }
+    static var bg2: Color { Color(.secondarySystemBackground) }
+    static var groupBg: Color { Color(.systemGroupedBackground) }
 }
 
 extension AnyTransition {
@@ -36,4 +37,11 @@ extension AnyTransition {
             .animation(.easeInOut(duration: 0.5).delay(0.2)),
         removal: .opacity
             .animation(.easeInOut(duration: 0.4)))
+}
+
+extension AnyLayout {
+    static func useVStack(if condition: Bool, spacing: CGFloat, @ViewBuilder content: @escaping () -> some View) -> some View {
+        let layout = condition ? AnyLayout(VStackLayout(spacing: spacing)) : AnyLayout(HStackLayout(spacing: spacing))
+        return layout(content)
+    }
 }
