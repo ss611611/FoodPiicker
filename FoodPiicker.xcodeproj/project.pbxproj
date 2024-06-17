@@ -15,6 +15,7 @@
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
 		EEBC7D392C0319C600A91580 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D382C0319C600A91580 /* Food.swift */; };
 		EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */; };
+		EEC7FABD2C1FD3C300A52F1F /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC7FABC2C1FD3C300A52F1F /* FoodForm.swift */; };
 		EEE29E912C1D1DBD0022762C /* ShapeStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */; };
 		EEE29E932C1D48A00022762C /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE29E922C1D48A00022762C /* FoodListView.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEBC7D382C0319C600A91580 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
+		EEC7FABC2C1FD3C300A52F1F /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
 		EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeStyleView.swift; sourceTree = "<group>"; };
 		EEE29E922C1D48A00022762C /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				EE86CF722C1C3397002FB340 /* Extension.swift */,
 				EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */,
 				EEE29E922C1D48A00022762C /* FoodListView.swift */,
+				EEC7FABC2C1FD3C300A52F1F /* FoodForm.swift */,
 			);
 			path = FoodPiicker;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */,
 				EE8958C42BFC77CE004D1B70 /* ContentView.swift in Sources */,
 				EEE29E932C1D48A00022762C /* FoodListView.swift in Sources */,
+				EEC7FABD2C1FD3C300A52F1F /* FoodForm.swift in Sources */,
 				EEE29E912C1D1DBD0022762C /* ShapeStyleView.swift in Sources */,
 				EE8958C22BFC77CE004D1B70 /* FoodPiickerApp.swift in Sources */,
 				EEBC7D392C0319C600A91580 /* Food.swift in Sources */,
