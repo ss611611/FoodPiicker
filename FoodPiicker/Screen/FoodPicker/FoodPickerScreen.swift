@@ -7,26 +7,12 @@
 
 import SwiftUI
 
-
-
-struct ContentView: View {
+struct FoodPickerScreen: View {
     @State private var selectedFood: Food?
     @State private var shouldShowInfo: Bool = false
     
     let food = Food.examples
-    
-    @ViewBuilder var selectedFoodInfoView: some View {
-        if let selectedFood {
-            
-            foodNameView
-            
-            Text("熱量 \(selectedFood.$calorie)").font(.title2)
-            
-            foodDetailView
-            
-        }
-    }
-    
+        
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
@@ -43,7 +29,7 @@ struct ContentView: View {
                 cancelButton
             }
             .padding()
-            .frame(maxWidth: .infinity, minHeight: UIScreen.main.bounds.height - 100)
+            .frame(minHeight: UIScreen.main.bounds.height - 100)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             .mainButtonStyle()
             .animation(.mySpring, value: shouldShowInfo)
@@ -53,7 +39,7 @@ struct ContentView: View {
 }
 
 // MARK: - Subviews
-private extension ContentView {
+private extension FoodPickerScreen {
     var foodImage: some View {
         Grid {
             if let selectedFood {
@@ -80,7 +66,7 @@ private extension ContentView {
             Button {
                 shouldShowInfo.toggle()
             } label: {
-                Image(systemName: "info.circle.fill").foregroundColor(.secondary)
+                SFSymbol.info.foregroundColor(.secondary)
             }.buttonStyle(.plain)
         }
     }
@@ -110,8 +96,20 @@ private extension ContentView {
                 .transition(.moveUpWithOpacity)
             }
         }
-        .frame(maxWidth: .infinity)
+        .maxWidth()
         .clipped()
+    }
+    
+    @ViewBuilder var selectedFoodInfoView: some View {
+        if let selectedFood {
+            
+            foodNameView
+            
+            Text("熱量 \(selectedFood.$calorie)").font(.title2)
+            
+            foodDetailView
+            
+        }
     }
     
     var selectFoodButton: some View {
@@ -134,7 +132,7 @@ private extension ContentView {
     }
 }
 
-extension ContentView {
+extension FoodPickerScreen {
     init(selectedFood: Food) {
         _selectedFood = State(wrappedValue: selectedFood)
     }
@@ -147,9 +145,9 @@ extension ContentView {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView(selectedFood: .examples.first!)
-            ContentView(selectedFood: .examples.first!).previewDevice(PreviewDevice.iPad)
-            ContentView(selectedFood: .examples.first!).previewDevice(PreviewDevice.iPhoneSE)
+            FoodPickerScreen(selectedFood: .examples.first!)
+            FoodPickerScreen(selectedFood: .examples.first!).previewDevice(PreviewDevice.iPad)
+            FoodPickerScreen(selectedFood: .examples.first!).previewDevice(PreviewDevice.iPhoneSE)
         }
     }
 }
