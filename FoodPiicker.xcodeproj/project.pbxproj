@@ -13,6 +13,11 @@
 		EE8958C42BFC77CE004D1B70 /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */; };
 		EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C52BFC77CE004D1B70 /* Assets.xcassets */; };
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
+		EEBB066A2C2549A40075698D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB06692C2549A40075698D /* HomeScreen.swift */; };
+		EEBB066C2C2557F80075698D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066B2C2557F80075698D /* SettingsScreen.swift */; };
+		EEBB066E2C256FC80075698D /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066D2C256FC80075698D /* Unit.swift */; };
+		EEBB06702C2570260075698D /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066F2C2570260075698D /* UserDefaultsKey.swift */; };
+		EEBB06722C2570970075698D /* AppStorage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB06712C2570970075698D /* AppStorage+.swift */; };
 		EEBC7D392C0319C600A91580 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D382C0319C600A91580 /* Food.swift */; };
 		EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */; };
 		EEC7FABD2C1FD3C300A52F1F /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC7FABC2C1FD3C300A52F1F /* FoodForm.swift */; };
@@ -35,6 +40,11 @@
 		EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
 		EE8958C52BFC77CE004D1B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEBB06692C2549A40075698D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		EEBB066B2C2557F80075698D /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		EEBB066D2C256FC80075698D /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		EEBB066F2C2570260075698D /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		EEBB06712C2570970075698D /* AppStorage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage+.swift"; sourceTree = "<group>"; };
 		EEBC7D382C0319C600A91580 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		EEBC7D3A2C032D8A00A91580 /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
 		EEC7FABC2C1FD3C300A52F1F /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
@@ -105,6 +115,8 @@
 			children = (
 				EEE1D4702C226CCC002244BC /* FoodList */,
 				EEE1D46F2C226CB8002244BC /* FoodPicker */,
+				EEBB06692C2549A40075698D /* HomeScreen.swift */,
+				EEBB066B2C2557F80075698D /* SettingsScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 				EEE1D47D2C22C36F002244BC /* Animation+.swift */,
 				EEE1D4812C22C3D1002244BC /* ShapeStyle+.swift */,
 				EE86CF722C1C3397002FB340 /* AnyTransition+.swift */,
+				EEBB06712C2570970075698D /* AppStorage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -177,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				EEE1D4792C227719002244BC /* SFSymbol.swift */,
+				EEBB066D2C256FC80075698D /* Unit.swift */,
+				EEBB066F2C2570260075698D /* UserDefaultsKey.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -255,15 +270,20 @@
 				EEE1D4802C22C3A4002244BC /* AnyLayout+.swift in Sources */,
 				EE86CF752C1C3C54002FB340 /* SuffixWrapper.swift in Sources */,
 				EE86CF732C1C3397002FB340 /* AnyTransition+.swift in Sources */,
+				EEBB06722C2570970075698D /* AppStorage+.swift in Sources */,
 				EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */,
 				EE8958C42BFC77CE004D1B70 /* FoodPickerScreen.swift in Sources */,
+				EEBB066E2C256FC80075698D /* Unit.swift in Sources */,
 				EEE1D4742C227341002244BC /* FoodDetailSheet.swift in Sources */,
 				EEE29E932C1D48A00022762C /* FoodListScreen.swift in Sources */,
 				EEE1D4762C227455002244BC /* Sheet.swift in Sources */,
 				EEE1D4822C22C3D1002244BC /* ShapeStyle+.swift in Sources */,
+				EEBB066C2C2557F80075698D /* SettingsScreen.swift in Sources */,
 				EEC7FABD2C1FD3C300A52F1F /* FoodForm.swift in Sources */,
 				EEE1D47C2C22C256002244BC /* View+.swift in Sources */,
+				EEBB066A2C2549A40075698D /* HomeScreen.swift in Sources */,
 				EEE1D47A2C227719002244BC /* SFSymbol.swift in Sources */,
+				EEBB06702C2570260075698D /* UserDefaultsKey.swift in Sources */,
 				EEE29E912C1D1DBD0022762C /* ShapeStyleView.swift in Sources */,
 				EE8958C22BFC77CE004D1B70 /* AppEntry.swift in Sources */,
 				EEBC7D392C0319C600A91580 /* Food.swift in Sources */,
