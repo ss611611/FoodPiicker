@@ -13,6 +13,7 @@
 		EE8958C42BFC77CE004D1B70 /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */; };
 		EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C52BFC77CE004D1B70 /* Assets.xcassets */; };
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
+		EEA06DE32C26950F00EE56F7 /* SuffixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */; };
 		EEBB066A2C2549A40075698D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB06692C2549A40075698D /* HomeScreen.swift */; };
 		EEBB066C2C2557F80075698D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066B2C2557F80075698D /* SettingsScreen.swift */; };
 		EEBB066E2C256FC80075698D /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066D2C256FC80075698D /* Unit.swift */; };
@@ -33,6 +34,16 @@
 		EEE29E932C1D48A00022762C /* FoodListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE29E922C1D48A00022762C /* FoodListScreen.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EEA06DE42C26950F00EE56F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE8958B62BFC77CD004D1B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8958BD2BFC77CD004D1B70;
+			remoteInfo = FoodPiicker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EE86CF722C1C3397002FB340 /* AnyTransition+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+.swift"; sourceTree = "<group>"; };
 		EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
@@ -41,6 +52,8 @@
 		EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
 		EE8958C52BFC77CE004D1B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEA06DE02C26950F00EE56F7 /* FoodPiickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPiickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixTests.swift; sourceTree = "<group>"; };
 		EEBB06692C2549A40075698D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		EEBB066B2C2557F80075698D /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		EEBB066D2C256FC80075698D /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
@@ -69,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EEA06DDD2C26950F00EE56F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +97,7 @@
 			children = (
 				EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */,
 				EE8958C02BFC77CE004D1B70 /* FoodPiicker */,
+				EEA06DE12C26950F00EE56F7 /* FoodPiickerTests */,
 				EE8958BF2BFC77CD004D1B70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8958BE2BFC77CD004D1B70 /* FoodPiicker.app */,
+				EEA06DE02C26950F00EE56F7 /* FoodPiickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +132,14 @@
 				EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEA06DE12C26950F00EE56F7 /* FoodPiickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */,
+			);
+			path = FoodPiickerTests;
 			sourceTree = "<group>";
 		};
 		EEE1D46B2C226A97002244BC /* Screen */ = {
@@ -219,6 +249,24 @@
 			productReference = EE8958BE2BFC77CD004D1B70 /* FoodPiicker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EEA06DDF2C26950F00EE56F7 /* FoodPiickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA06DE82C26950F00EE56F7 /* Build configuration list for PBXNativeTarget "FoodPiickerTests" */;
+			buildPhases = (
+				EEA06DDC2C26950F00EE56F7 /* Sources */,
+				EEA06DDD2C26950F00EE56F7 /* Frameworks */,
+				EEA06DDE2C26950F00EE56F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA06DE52C26950F00EE56F7 /* PBXTargetDependency */,
+			);
+			name = FoodPiickerTests;
+			productName = FoodPiickerTests;
+			productReference = EEA06DE02C26950F00EE56F7 /* FoodPiickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,11 +274,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					EE8958BD2BFC77CD004D1B70 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					EEA06DDF2C26950F00EE56F7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EE8958BD2BFC77CD004D1B70;
 					};
 				};
 			};
@@ -248,6 +300,7 @@
 			projectRoot = "";
 			targets = (
 				EE8958BD2BFC77CD004D1B70 /* FoodPiicker */,
+				EEA06DDF2C26950F00EE56F7 /* FoodPiickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +312,13 @@
 			files = (
 				EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */,
 				EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA06DDE2C26950F00EE56F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +354,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EEA06DDC2C26950F00EE56F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA06DE32C26950F00EE56F7 /* SuffixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEA06DE52C26950F00EE56F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE8958BD2BFC77CD004D1B70 /* FoodPiicker */;
+			targetProxy = EEA06DE42C26950F00EE56F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EE8958CA2BFC77CE004D1B70 /* Debug */ = {
@@ -474,6 +550,44 @@
 			};
 			name = Release;
 		};
+		EEA06DE62C26950F00EE56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jackie.FoodPiickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPiicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodPiicker";
+			};
+			name = Debug;
+		};
+		EEA06DE72C26950F00EE56F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jackie.FoodPiickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPiicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodPiicker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -491,6 +605,15 @@
 			buildConfigurations = (
 				EE8958CD2BFC77CE004D1B70 /* Debug */,
 				EE8958CE2BFC77CE004D1B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA06DE82C26950F00EE56F7 /* Build configuration list for PBXNativeTarget "FoodPiickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA06DE62C26950F00EE56F7 /* Debug */,
+				EEA06DE72C26950F00EE56F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
