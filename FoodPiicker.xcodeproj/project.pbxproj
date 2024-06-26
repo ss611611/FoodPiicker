@@ -14,6 +14,7 @@
 		EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C52BFC77CE004D1B70 /* Assets.xcassets */; };
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
 		EE9612C42C2BAC9E00CF3A1E /* MyUnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9612C32C2BAC9E00CF3A1E /* MyUnitProtocol.swift */; };
+		EE9612C62C2BC36400CF3A1E /* AsyncImageDemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9612C52C2BC36400CF3A1E /* AsyncImageDemoScreen.swift */; };
 		EEA06DE32C26950F00EE56F7 /* SuffixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */; };
 		EEBB066A2C2549A40075698D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB06692C2549A40075698D /* HomeScreen.swift */; };
 		EEBB066C2C2557F80075698D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066B2C2557F80075698D /* SettingsScreen.swift */; };
@@ -54,6 +55,7 @@
 		EE8958C52BFC77CE004D1B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE9612C32C2BAC9E00CF3A1E /* MyUnitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitProtocol.swift; sourceTree = "<group>"; };
+		EE9612C52C2BC36400CF3A1E /* AsyncImageDemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemoScreen.swift; sourceTree = "<group>"; };
 		EEA06DE02C26950F00EE56F7 /* FoodPiickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPiickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixTests.swift; sourceTree = "<group>"; };
 		EEBB06692C2549A40075698D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		EE8958B52BFC77CD004D1B70 = {
 			isa = PBXGroup;
 			children = (
+				EE9612C72C2BC36A00CF3A1E /* DemoView */,
 				EEE29E902C1D1DBD0022762C /* ShapeStyleView.swift */,
 				EE8958C02BFC77CE004D1B70 /* FoodPiicker */,
 				EEA06DE12C26950F00EE56F7 /* FoodPiickerTests */,
@@ -134,6 +137,14 @@
 				EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE9612C72C2BC36A00CF3A1E /* DemoView */ = {
+			isa = PBXGroup;
+			children = (
+				EE9612C52C2BC36400CF3A1E /* AsyncImageDemoScreen.swift */,
+			);
+			path = DemoView;
 			sourceTree = "<group>";
 		};
 		EEA06DE12C26950F00EE56F7 /* FoodPiickerTests */ = {
@@ -335,6 +346,7 @@
 				EEE1D47E2C22C36F002244BC /* Animation+.swift in Sources */,
 				EEBB06742C2587430075698D /* Array+.swift in Sources */,
 				EEE1D4802C22C3A4002244BC /* AnyLayout+.swift in Sources */,
+				EE9612C62C2BC36400CF3A1E /* AsyncImageDemoScreen.swift in Sources */,
 				EE86CF752C1C3C54002FB340 /* SuffixWrapper.swift in Sources */,
 				EE86CF732C1C3397002FB340 /* AnyTransition+.swift in Sources */,
 				EEBB06722C2570970075698D /* AppStorage+.swift in Sources */,

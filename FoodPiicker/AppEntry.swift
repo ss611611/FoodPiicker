@@ -15,7 +15,7 @@ struct AppEntry: App {
     }
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            AsyncImageDemoScreen()
         }
     }
     
