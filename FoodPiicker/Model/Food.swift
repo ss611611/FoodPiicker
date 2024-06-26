@@ -5,16 +5,36 @@
 //  Created by Jackie Lu on 2024/5/26.
 //
 
-import Foundation
+import SwiftUI
 
 struct Food: Equatable, Identifiable {
     var id = UUID()
     var name: String
     var image: String
-    @Suffix("大卡") var calorie: Double = .zero
-    @Suffix("g") var carb: Double = .zero
-    @Suffix("g") var fat: Double = .zero
-    @Suffix("g") var protein: Double = .zero
+    @Energy var calorie: Double
+    @Weight var carb: Double
+    @Weight var fat: Double
+    @Weight var protein: Double
+}
+
+//MARK: statics
+extension Food {
+    static var new: Food { 
+        let preferredWieghtUnit = MyWeightUnit.getPreferredUnit()
+        let preferredEnergyUnit = MyEnergyUnit.getPreferredUnit()
+        
+        return Food(name: "", image: "", calorie: .init(wrappedValue: .zero, preferredEnergyUnit), carb: .init(wrappedValue: .zero, preferredWieghtUnit), fat: .init(wrappedValue: .zero, preferredWieghtUnit), protein: .init(wrappedValue: .zero, preferredWieghtUnit))
+    }
+    
+    private init(id: UUID = UUID(), name: String, image: String, calorie: Double, carb: Double, fat: Double, protein: Double) {
+        self.id = id
+        self.name = name
+        self.image = image
+        self._calorie = .init(wrappedValue: calorie, .cal)
+        self._carb = .init(wrappedValue: carb, .gram)
+        self._fat = .init(wrappedValue: fat, .gram)
+        self._protein = .init(wrappedValue: protein, .gram)
+    }
     
     static let examples = [
         Food(name: "漢堡", image: "🍔", calorie: 294, carb: 14, fat: 24, protein: 17),
@@ -27,8 +47,5 @@ struct Food: Equatable, Identifiable {
         Food(name: "牛肉麵", image: "🐄🍜", calorie: 219, carb: 33, fat: 5, protein: 9),
         Food(name: "關東煮", image: "🥘", calorie: 80, carb: 4, fat: 4, protein: 6),
     ]
-    
-    static var new: Food { Food(name: "", image: "") }
 }
-
 extension Food: Codable { }

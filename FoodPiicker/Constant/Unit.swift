@@ -5,14 +5,37 @@
 //  Created by Jackie Lu on 2024/6/21.
 //
 
-import SwiftUI
+import Foundation
 
-enum Unit: String, CaseIterable, Identifiable, View {
-    case gram = "g", pound = "lb"
+enum MyEnergyUnit: String, MyUnitProtocol {
+    static var userDefaultsKey: UserDefaults.Key = .preferredEnergyUnit
     
-    var id: Self { self }
+    static var defaultUnit: MyEnergyUnit = .cal
     
-    var body: some View {
-        Text(rawValue)
+    case cal = "大卡"
+    
+    var dimension: UnitEnergy {
+        switch self {
+        case .cal: return .calories
+        }
     }
+}
+
+enum MyWeightUnit: String, MyUnitProtocol {
+    case gram = "g", pound = "lb", ounce
+    
+    var dimension: UnitMass {
+        switch self {
+        case .gram:
+            return .grams
+        case .pound:
+            return .pounds
+        case .ounce:
+            return .ounces
+        }
+    }
+    static var userDefaultsKey: UserDefaults.Key = .preferredWieghtUnit
+    
+    static var defaultUnit: MyWeightUnit = .gram
+    
 }

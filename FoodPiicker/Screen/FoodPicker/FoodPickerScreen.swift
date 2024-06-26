@@ -19,7 +19,7 @@ struct FoodPickerScreen: View {
                 VStack(spacing: 30) {
                     foodImage
                     
-                    Text("今天吃什麼？").bold()
+                    Text("今天吃什麼？").font(.title.bold())
                     
                     selectedFoodInfoView
                     
@@ -44,7 +44,7 @@ struct FoodPickerScreen: View {
 // MARK: - Subviews
 private extension FoodPickerScreen {
     var foodImage: some View {
-        Grid {
+        Group {
             if let selectedFood {
                 Text(selectedFood.image)
                     .font(.system(size: 200))
@@ -87,12 +87,12 @@ private extension FoodPickerScreen {
                         .gridCellUnsizedAxes(.horizontal)
                         .padding(.horizontal, -10)
                     GridRow {
-                        Text(selectedFood!.$protein)
-                        Text(selectedFood!.$fat)
-                        Text(selectedFood!.$carb)
+                        Text(selectedFood!.$protein.description)
+                        Text(selectedFood!.$fat.description)
+                        Text(selectedFood!.$carb.description)
                     }
                 }
-                .font(.title2)
+                .font(.title3)
                 .padding(.horizontal)
                 .padding()
                 .roundedRectBackground()
@@ -108,7 +108,7 @@ private extension FoodPickerScreen {
             
             foodNameView
             
-            Text("熱量 \(selectedFood.$calorie)").font(.title2)
+            Text("熱量 \(selectedFood.$calorie.description)").font(.title2)
             
             foodDetailView
             

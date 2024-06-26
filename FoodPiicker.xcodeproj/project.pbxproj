@@ -13,6 +13,7 @@
 		EE8958C42BFC77CE004D1B70 /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */; };
 		EE8958C62BFC77CE004D1B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C52BFC77CE004D1B70 /* Assets.xcassets */; };
 		EE8958C92BFC77CE004D1B70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */; };
+		EE9612C42C2BAC9E00CF3A1E /* MyUnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9612C32C2BAC9E00CF3A1E /* MyUnitProtocol.swift */; };
 		EEA06DE32C26950F00EE56F7 /* SuffixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */; };
 		EEBB066A2C2549A40075698D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB06692C2549A40075698D /* HomeScreen.swift */; };
 		EEBB066C2C2557F80075698D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB066B2C2557F80075698D /* SettingsScreen.swift */; };
@@ -52,6 +53,7 @@
 		EE8958C32BFC77CE004D1B70 /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
 		EE8958C52BFC77CE004D1B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8958C82BFC77CE004D1B70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE9612C32C2BAC9E00CF3A1E /* MyUnitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitProtocol.swift; sourceTree = "<group>"; };
 		EEA06DE02C26950F00EE56F7 /* FoodPiickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPiickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA06DE22C26950F00EE56F7 /* SuffixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixTests.swift; sourceTree = "<group>"; };
 		EEBB06692C2549A40075698D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				EE86CF742C1C3C54002FB340 /* SuffixWrapper.swift */,
+				EE9612C32C2BAC9E00CF3A1E /* MyUnitProtocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				EE86CF732C1C3397002FB340 /* AnyTransition+.swift in Sources */,
 				EEBB06722C2570970075698D /* AppStorage+.swift in Sources */,
 				EEBC7D3B2C032D8A00A91580 /* PreviewDevice+.swift in Sources */,
+				EE9612C42C2BAC9E00CF3A1E /* MyUnitProtocol.swift in Sources */,
 				EE8958C42BFC77CE004D1B70 /* FoodPickerScreen.swift in Sources */,
 				EEBB066E2C256FC80075698D /* Unit.swift in Sources */,
 				EEE1D4742C227341002244BC /* FoodDetailSheet.swift in Sources */,

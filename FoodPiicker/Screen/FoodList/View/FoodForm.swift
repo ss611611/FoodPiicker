@@ -14,9 +14,7 @@ extension FoodListScreen {
         @State var food: Food
         var onSubmit: (Food) -> Void
         
-        private var isNotValid: Bool {
-            food.name.isEmpty || food.image.count > 2
-        }
+        private var isNotValid: Bool { food.name.isEmpty || food.image.count > 2 }
         
         private var invalidMessage: String? {
             if food.name.isEmpty { return "請輸入名稱" }
@@ -73,11 +71,11 @@ private extension FoodListScreen.FoodForm {
                 
             }
             
-            buildNumberField(title: "熱量", value: $food.calorie, field: .calories, suffix: "大卡")
+            buildNumberField(title: "熱量", value: $food.$calorie, field: .calories)
             
-            buildNumberField(title: "蛋白質", value: $food.protein, field: .protein)
-            buildNumberField(title: "脂肪", value: $food.fat, field: .fat)
-            buildNumberField(title: "碳水", value: $food.carb, field: .carb)
+            buildNumberField(title: "蛋白質", value: $food.$protein, field: .protein)
+            buildNumberField(title: "脂肪", value: $food.$fat, field: .fat)
+            buildNumberField(title: "碳水", value: $food.$carb, field: .carb)
         }.padding(.top, -16)
     }
     
@@ -96,13 +94,25 @@ private extension FoodListScreen.FoodForm {
         .disabled(isNotValid)
     }
     
-    func buildNumberField(title: String, value: Binding<Double>, field: MyField, suffix: String = "g") -> some View {
+    func buildNumberField<Unit: MyUnitProtocol & Hashable>(title: String, value: Binding<Suffix<Unit>>, field: MyField) -> some View {
         LabeledContent(title) {
             HStack {
-                TextField("", value: value, format: .number.precision(.fractionLength(1)))
-                    .focused($field, equals: field)
-                    .keyboardType(.decimalPad)
-                Text(suffix)
+                TextField("", value: Binding(
+                    get: { value.wrappedValue.wrappedValue },
+                    set: { value.wrappedValue.wrappedValue = $0 }
+                ), format: .number.precision(.fractionLength(1)))
+                .focused($field, equals: field)
+                .keyboardType(.decimalPad)
+                
+                if Unit.allCases.count <= 1 {
+                    value.unit.wrappedValue.font(.body)
+                } else {
+                    Picker("單位", selection: value.unit) {
+                        ForEach(Unit.allCases, id: \.self) { unit in
+                            unit
+                        }
+                    }.labelsHidden()
+                }
             }
         }
     }
